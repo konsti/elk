@@ -12,6 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define 'elk-docker' do |node|
     node.vm.hostname = 'elk-docker.local'
-    node.vm.network 'private_network', ip: '10.0.0.10'
+    node.vm.network 'private_network', ip: '10.0.0.11'
   end
 end

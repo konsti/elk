@@ -80,6 +80,7 @@ rm kibana.tar.gz
 # Move startup scripts
 mkdir -p /etc/my_init.d
 mv /kk_build/10_system_env.sh /etc/my_init.d
+mv /kk_build/90_start_services.sh /etc/my_init.d
 chmod +x /etc/my_init.d/*
 
 # Make env sourcing possible

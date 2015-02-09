@@ -6,6 +6,12 @@
 * logstash 1.4.2
 * kibana
 
+### Example Docker Run
+
+```bash
+docker run -d -p 9200:9200 -p 5000:5000/udp -p 5601:5601 -v /srv/data:/data --env ES_HEAP_SIZE=512m --name elk konsti/elk
+```
+
 ### Start apps in the container
 
 By default all apps are managed by the baseimage runit supervisor. All services are marked as `down`.
