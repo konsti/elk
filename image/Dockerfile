@@ -1,5 +1,5 @@
-FROM phusion/baseimage:0.9.16
-MAINTAINER Konstantin Krauss <konstantin.krauss@me.com>
+FROM phusion/baseimage:VERSION
+MAINTAINER Konstantin Krauss <konstantin@propertybase.com>
 
 CMD ["/sbin/my_init"]
 

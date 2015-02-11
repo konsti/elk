@@ -4,12 +4,13 @@
 * oracle JRE 8
 * elasticsearch 1.4.2
 * logstash 1.4.2
-* kibana
+* kibana 4.0.0 (beta3)
 
 ### Example Docker Run
 
 ```bash
-docker run -d -p 9200:9200 -p 5000:5000/udp -p 5601:5601 -v /srv/data:/data --env ES_HEAP_SIZE=512m --name elk konsti/elk
+docker run -d -v /srv/data:/data --env ES_HEAP_SIZE=512m --env START="elasticsearch,logstash,kibana" --name elk --net=host propertybase/elk
+docker run -d -v /srv/data:/data --env ES_HEAP_SIZE=512m --env START="elasticsearch" --name elk --net=host propertybase/elk
 ```
 
 ### Start apps in the container

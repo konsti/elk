@@ -64,6 +64,7 @@ if [ "SHA1(elasticsearch.tar.gz)= ${ELASTICSEARCH_SHA}" = "${DOWNLOADED_SHA}" ];
 
   # Install Kopf Plugin
   /usr/local/elasticsearch/bin/plugin --install lmenezes/elasticsearch-kopf/1.4.4
+  /usr/local/elasticsearch/bin/plugin --install mobz/elasticsearch-head
 else
   echo "ElasticSearch Key is _not_ valid!!!";
   exit 1
